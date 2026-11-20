@@ -1,0 +1,85 @@
+/* 1. 整体：border-box 让宽度计算更简单。 */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, "Microsoft YaHei", sans-serif;
+  color: #302b24;
+  background: #fffaf1;
+  line-height: 1.8;
+}
+a { color: #914020; }
+img { display: block; width: 100%; height: auto; }
+h1, h2, h3 { line-height: 1.3; }
+h1 { font-size: 46px; margin: 16px 0; }
+h2 { font-size: 30px; margin: 10px 0 20px; }
+h3 { font-size: 21px; }
+
+/* 2. 页头和导航 */
+header {
+  padding: 22px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #e5dccd;
+}
+.logo { font-size: 25px; font-weight: bold; text-decoration: none; }
+.logo small { display: block; font-size: 10px; letter-spacing: 2px; }
+nav { display: flex; flex-wrap: wrap; gap: 20px; }
+nav a { color: #302b24; text-decoration: none; }
+nav a:hover { color: #914020; text-decoration: underline; }
+
+/* 3. 内容区域：max-width 防止内容在大屏幕上过宽。 */
+main { max-width: 1120px; margin: auto; padding: 0 24px; }
+section { padding: 56px 0; border-bottom: 1px solid #e5dccd; }
+.tag { color: #914020; font-weight: bold; letter-spacing: 2px; font-size: 13px; }
+.hero { display: flex; align-items: center; gap: 40px; }
+.hero div { flex: 1; }
+.hero img { width: 46%; border-radius: 12px; }
+.button, button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #914020;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  text-decoration: none;
+  font: inherit;
+}
+.button:hover { background: #713017; }
+.features { display: flex; flex-wrap: wrap; gap: 12px 36px; margin-top: 20px; }
+.features span { font-size: 25px; margin-right: 8px; }
+
+/* 4. 菜单：flex 让三张卡片排成一行。 */
+.menu-list { display: flex; gap: 24px; margin-top: 28px; }
+.menu-item { flex: 1; min-width: 0; background: white; border: 1px solid #e5dccd; border-radius: 10px; overflow: hidden; }
+.menu-text { padding: 22px; }
+.menu-text h3 { margin-top: 0; }
+.menu-text strong { color: #914020; font-size: 23px; }
+video { display: block; width: 100%; max-width: 360px; max-height: 640px; background: #302b24; margin: 24px auto; border-radius: 10px; }
+.menu-item img { aspect-ratio: 4 / 3; object-fit: cover; }
+.hero img { aspect-ratio: 4 / 3; object-fit: cover; }
+.credits { padding: 24px 0; font-size: 14px; }
+summary { cursor: pointer; font-weight: bold; }
+.note { color: #696056; font-size: 14px; }
+
+/* 5. 联系区和表单 */
+.contact-layout { display: flex; gap: 50px; }
+.contact-layout > div, form { flex: 1; min-width: 0; }
+label { display: block; margin: 12px 0 5px; }
+input, textarea { width: 100%; padding: 12px; border: 1px solid #bcb1a2; border-radius: 5px; font: inherit; background: white; }
+textarea { resize: vertical; }
+button:disabled { background: #756c62; cursor: not-allowed; }
+footer { padding: 28px 20px; text-align: center; background: #302b24; color: #fffaf1; font-size: 14px; }
+
+/* 6. 手机：把横排内容变成竖排。 */
+@media (max-width: 700px) {
+  header, .hero, .menu-list, .contact-layout { flex-direction: column; align-items: stretch; }
+  header { padding: 20px 24px; }
+  nav { gap: 10px 18px; }
+  h1 { font-size: 34px; }
+  h2 { font-size: 26px; }
+  section { padding: 36px 0; }
+  .hero img { width: 100%; }
+  .contact-layout { gap: 15px; }
+}

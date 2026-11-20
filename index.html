@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INTI Chicken Rice | Simple Comfort Food</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- header 是页头；href="#menu" 会跳到 id="menu" 的部分。 -->
+  <header>
+    <a class="logo" href="#home">INTI <small>CHICKEN RICE</small></a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 首页：左边介绍，右边图片。 -->
+    <section id="home" class="hero">
+      <div>
+        <p class="tag">A PLATE OF COMFORT</p>
+        <h1>Good food.<br>Simple happiness.</h1>
+        <p>Tender chicken, fragrant rice and a little chilli on the side. Take a break and enjoy a comforting plate of chicken rice.</p>
+        <a class="button" href="#menu">Explore our menu →</a>
+      </div>
+      <img src="images/steamed.jpg" alt="A real plate of Hainanese chicken rice with cucumber and sauces">
+    </section>
+
+    <section id="about">
+      <p class="tag">ABOUT US</p>
+      <h2>One simple dish. Plenty to enjoy.</h2>
+      <p>INTI Chicken Rice is a neighbourhood chicken rice restaurant concept for students and local office workers. Our menu brings together familiar flavours, generous comfort and affordable prices for an easy lunch.</p>
+      <div class="features">
+        <p><span aria-hidden="true">🍚</span> Fragrant rice</p>
+        <p><span aria-hidden="true">🍗</span> Chicken favourites and sides</p>
+        <p><span aria-hidden="true">🥣</span> Soup with every plate</p>
+      </div>
+    </section>
+
+    <section id="menu">
+      <p class="tag">OUR MENU</p>
+      <h2>INTI Chicken Rice Menu</h2>
+      <p>Chicken rice classics, filling meal sets and tasty sides. Sample prices are shown below; photographs illustrate the dishes and are not from this restaurant.</p>
+      <h3>Chicken Rice Classics</h3>
+      <!-- 同一行的三张菜单卡片使用相同样式。 -->
+      <div class="menu-list">
+        <article class="menu-item">
+          <img src="images/steamed.jpg" alt="Hainanese chicken rice photographed by Misaochan">
+          <div class="menu-text">
+            <h3>Hainanese Chicken Rice</h3>
+            <p>Tender poached chicken with fragrant rice, cucumber and chilli sauce.</p>
+            <strong>RM 8.00</strong>
+          </div>
+        </article>
+        <article class="menu-item">
+          <img src="images/roasted.jpg" alt="Roasted chicken rice photographed by Wiki Asmah">
+          <div class="menu-text">
+            <h3>Roasted Chicken Rice</h3>
+            <p>Golden roasted chicken served with fragrant rice and fresh sides.</p>
+            <strong>RM 9.00</strong>
+          </div>
+        </article>
+        <article class="menu-item">
+          <img src="images/soy.jpg" alt="Soya sauce chicken with cucumber photographed by Choo Yut Shing">
+          <div class="menu-text">
+            <h3>Soy Sauce Chicken Rice</h3>
+            <p>Savoury soy sauce chicken, served with rice and a rich, flavourful sauce.</p>
+            <strong>RM 9.00</strong>
+          </div>
+        </article>
+      </div>
+
+      <h3>Meal Sets</h3>
+      <div class="menu-list">
+        <article class="menu-item">
+          <div class="menu-text">
+            <h3>Chicken Rice & Egg Set</h3>
+            <p>Your choice of poached, roasted or soy sauce chicken rice, with a braised egg and clear soup.</p>
+            <strong>RM 11.00</strong>
+          </div>
+        </article>
+        <article class="menu-item">
+          <div class="menu-text">
+            <h3>Double Chicken Rice</h3>
+            <p>A generous mix of poached and roasted chicken, served with fragrant rice, cucumber and clear soup.</p>
+            <strong>RM 13.00</strong>
+          </div>
+        </article>
+        <article class="menu-item">
+          <div class="menu-text">
+            <h3>Sharing Set for Two</h3>
+            <p>Poached and roasted chicken, two portions of fragrant rice, seasonal vegetables and two bowls of clear soup.</p>
+            <strong>RM 26.00</strong>
+          </div>
+        </article>
+      </div>
+
+      <h3>Sides & Extras</h3>
+      <div class="menu-list">
+        <article class="menu-item">
+          <div class="menu-text">
+            <h3>Braised Egg</h3>
+            <p>A whole egg gently simmered in a savoury soy sauce broth.</p>
+            <strong>RM 2.00</strong>
+          </div>
+        </article>
+        <article class="menu-item">
+          <div class="menu-text">
+            <h3>Seasonal Vegetables</h3>
+            <p>A light serving of blanched greens with garlic and a savoury sauce.</p>
+            <strong>RM 5.00</strong>
+          </div>
+        </article>
+        <article class="menu-item">
+          <div class="menu-text">
+            <h3>Fragrant Chicken Rice</h3>
+            <p>An extra bowl of rice cooked with chicken stock, ginger and garlic.</p>
+            <strong>RM 2.50</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="video-section">
+      <p class="tag">A LITTLE FOOD INSPIRATION</p>
+      <h2>Chicken, rice and a little inspiration.</h2>
+      <p>A short look at Indonesian-style chicken and rice preparation. This stock clip is food inspiration, not a Hainanese recipe tutorial or footage from our restaurant.</p>
+      <!-- 本地 MP4 配合 controls 显示播放按钮，无需 YouTube 或 JavaScript。 -->
+      <video controls playsinline preload="metadata" aria-label="Indonesian chicken and rice preparation">
+        <source src="videos/chicken-and-rice.mp4" type="video/mp4">
+        Your browser does not support video. <a href="videos/chicken-and-rice.mp4">Open the MP4 video</a>.
+      </video>
+      <p class="note">Video by <a href="https://www.pexels.com/video/outdoor-cooking-indonesian-chicken-and-rice-37011395/">setengah lima sore / Pexels</a>. <a href="videos/chicken-and-rice.mp4">Open video separately</a>.</p>
+    </section>
+
+    <section id="contact">
+      <p class="tag">CONTACT US</p>
+      <h2>We would love to hear from you.</h2>
+      <div class="contact-layout">
+        <div>
+          <h3>INTI Chicken Rice</h3>
+          <p>Sample opening hours: Daily, 10:00 am – 8:00 pm</p>
+          <p>Address: To be confirmed</p>
+          <p>Email: hello@example.com (sample)</p>
+          <p class="note">A student website project. Restaurant details and prices are illustrative.</p>
+        </div>
+        <!-- 作业只要求展示表单；按钮不会发送或保存数据。 -->
+        <form>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Write your message"></textarea>
+          <p class="note">This is a display-only form. Messages will not be sent.</p>
+          <button type="button" disabled>Send message (demo only)</button>
+        </form>
+      </div>
+    </section>
+    <section class="credits">
+      <details>
+        <summary>Photo and video credits</summary>
+        <p>Hainanese chicken rice: <a href="https://commons.wikimedia.org/wiki/File:Hainanese_chicken_rice.jpg">Misaochan</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+        <p>Roasted chicken rice: <a href="https://commons.wikimedia.org/wiki/File:Roasted_Chicken_Rice_-_01.jpg">Wiki Asmah</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+        <p>Soya sauce chicken: <a href="https://commons.wikimedia.org/wiki/File:Soya_Sauce_Chicken_(52572435460).jpg">Choo Yut Shing</a>, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.</p>
+        <p>Original photo files are included unchanged. Display cropping is applied with CSS; the roast chicken photo and its display crop remain under CC BY-SA 4.0.</p>
+        <p>Video: <a href="https://www.pexels.com/video/outdoor-cooking-indonesian-chicken-and-rice-37011395/">Outdoor Cooking Indonesian Chicken and Rice</a> by setengah lima sore, used unchanged under the <a href="https://www.pexels.com/license/">Pexels License</a>.</p>
+      </details>
+    </section>
+  </main>
+  <footer>INTI Chicken Rice | Student Web Design Project</footer>
+</body>
+</html>
